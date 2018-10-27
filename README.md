@@ -4,7 +4,8 @@
 
 #  Eureka server
 
-Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers. At Netflix, Eureka is used for the following purposes apart from playing a critical part in mid-tier load balancing.
+Eureka is a REST (Representational State Transfer) based service that is primarily used in the AWS cloud for locating services for the purpose of load balancing and failover of middle-tier servers. 
+Check the repository [Eureka from Netflix][eureka] for more information.
 
 ## Getting Started
 
@@ -73,3 +74,4 @@ The app will be available at http://localhost:8761
 [maven]: https://maven.apache.org/download.cgi
 [jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
 [JEE]: http://www.oracle.com/technetwork/java/javaee/tech/index.html
+[eureka]: https://github.com/Netflix/eureka
