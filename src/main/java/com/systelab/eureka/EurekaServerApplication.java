@@ -1,4 +1,4 @@
-package com.systelab.identity;
+package com.systelab.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

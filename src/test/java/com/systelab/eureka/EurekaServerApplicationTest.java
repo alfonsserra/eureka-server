@@ -1,4 +1,4 @@
-package com.systelab.identity.rest;
+package com.systelab.eureka;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
