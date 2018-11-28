@@ -43,6 +43,13 @@ cd target
 java -jar eureka-server-1.0.jar
 ```
 
+Or with the maven plugin:
+
+```bash
+mvn spring-boot:run
+```
+
+
 Head to http://localhost:8761 in order to see the Eureka Daskboard
 
 
