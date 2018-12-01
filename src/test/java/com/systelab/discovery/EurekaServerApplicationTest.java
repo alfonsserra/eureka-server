@@ -1,4 +1,4 @@
-package com.systelab.eureka;
+package com.systelab.discovery;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

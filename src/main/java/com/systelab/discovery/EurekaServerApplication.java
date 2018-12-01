@@ -1,4 +1,4 @@
-package com.systelab.eureka;
+package com.systelab.discovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
