@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/systelab/eureka-server.svg?branch=master)](https://travis-ci.org/systelab/eureka-server)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/eureka-server?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/eureka-server&amp;utm_campaign=Badge_Grade)
-[![Known Vulnerabilities](https://snyk.io/test/github/systelab/eureka-server/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/eureka-server?targetFile=pom.xml)
+[![Build Status](https://travis-ci.org/systelab/discovery-service.svg?branch=master)](https://travis-ci.org/systelab/discovery-service)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ce4e563c45b4d09a975d61bed7d5d50)](https://www.codacy.com/app/systelab/discovery-service?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=systelab/discovery-service&amp;utm_campaign=Badge_Grade)
+[![Known Vulnerabilities](https://snyk.io/test/github/systelab/discovery-service/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/systelab/discovery-service?targetFile=pom.xml)
 
 #  Eureka server
 
@@ -9,21 +9,21 @@ Check the repository [Eureka from Netflix][eureka] for more information.
 
 ## Getting Started
 
-To get you started you can simply clone the `eureka-server` repository and install the dependencies:
+To get you started you can simply clone the `discovery-service` repository and install the dependencies:
 
 ### Prerequisites
 
-You need [git][git] to clone the `eureka-server` repository.
+You need [git][git] to clone the `discovery-service` repository.
 
 You will need [Java™ SE Development Kit 8][jdk-download] and [Maven][maven].
 
-### Clone `eureka-server`
+### Clone `discovery-service`
 
-Clone the `eureka-server` repository using git:
+Clone the `discovery-service` repository using git:
 
 ```bash
-git clone https://github.com/systelab/eureka-server.git
-cd eureka-server
+git clone https://github.com/systelab/discovery-service.git
+cd discovery-service
 ```
 
 ### Install Dependencies
@@ -40,7 +40,7 @@ To launch the server, simply run with java -jar the generated jar file.
 
 ```bash
 cd target
-java -jar eureka-server-1.0.jar
+java -jar discovery-service-1.0.jar
 ```
 
 Or with the maven plugin:
@@ -64,13 +64,13 @@ There is another build rule to trigger a new tag and create a 'version-x.y.z' im
 You can always manually create the image with the following command:
 
 ```bash
-docker build -t systelab/eureka-server . 
+docker build -t systelab/discovery-service . 
 ```
 
 ### Run the container
 
 ```bash
-docker run -p 8761:8761 systelab/eureka-server
+docker run -p 8761:8761 systelab/discovery-service
 ```
 
 The app will be available at http://localhost:8761

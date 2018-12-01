@@ -4,9 +4,9 @@
 FROM maven:alpine as builder
 
 ## Storing node modules on a separate layer will prevent unnecessary npm installs at each build
-RUN mkdir /eureka-server
+RUN mkdir /discovery-service
 
-WORKDIR /eureka-server
+WORKDIR /discovery-service
 
 COPY . .
 
@@ -18,7 +18,7 @@ RUN mvn package
 FROM openjdk:8-jre-alpine
 
 
-COPY --from=builder /eureka-server/target/eureka-server-1.0.jar eureka-server.jar
+COPY --from=builder /discovery-service/target/discovery-service-1.0.jar discovery-service.jar
 
 
-CMD ["java","-jar","eureka-server.jar"]
+CMD ["java","-jar","discovery-service.jar"]
